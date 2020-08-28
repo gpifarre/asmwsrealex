@@ -1,8 +1,5 @@
 {
     "name": "asm/globalpayments",
-    "description": "N/A",
-    "type": "vcs",
-    "url": "https://gitlab.asmws.com/scandiweb/asmglobalpayments",
     "require": {
         "php": "~7.1.3||~7.2.0||~7.3.0",
         "magento/framework": "102.0.*",
