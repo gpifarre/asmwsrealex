@@ -1,0 +1,26 @@
+# Copyright © ASMWS, Inc. All rights reserved.
+# See COPYING.txt for license details.
+
+type Mutation {
+    createRealexClientToken: String! @resolver(class: "\\asm\\globalpayments\\Model\\Resolver\\CreateRealexPayment") @doc(description:"Creates Realex Client Token for creating client-side nonce.")
+}
+
+input PaymentMethodInput {
+    realex: RealexInput
+}
+
+input RealexInput {
+    credicard: String!
+    expMonth: Int!
+    expYear: Int!
+    cvn: Int!
+    currency: String!
+    charge: Float!
+    userId: Int!
+    orderId: Int!
+
+}
+
+type Query {
+    ala_mon: String
+}
