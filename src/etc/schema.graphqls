@@ -2,7 +2,7 @@
 # See COPYING.txt for license details.
 
 type Mutation {
-    createRealexClientToken: String! @resolver(class: "\\asm\\globalpayments\\Model\\Resolver\\CreateRealexPayment") @doc(description:"Creates Realex Client Token for creating client-side nonce.")
+    createRealexPayment: String! @resolver(class: "\\asm\\globalpayments\\Model\\Resolver\\CreateRealexPayment") @doc(description:"Creates Realex Client Token for creating client-side nonce.")
 }
 
 input PaymentMethodInput {
